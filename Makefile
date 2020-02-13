@@ -29,6 +29,8 @@ DEFINES += -DGLOBAL_CONFIG_DIR='"$(GLOBAL_CONFIG_DIR)"'
 
 OBJDIR_BASE := obj-unix
 
+LDFLAGS += -lgo2
+
 ifeq ($(NEED_GOLD_LINKER), 1)
    LDFLAGS += -fuse-ld=gold
 endif
